@@ -1,0 +1,390 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(135deg, #fff0f6, #f0eaff);
+    color: #665477;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    color: #9874c5;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+header p {
+    color: #c17fa7;
+    margin-top: 5px;
+}
+
+main {
+    max-width: 950px;
+    width: 92%;
+    margin: auto;
+}
+
+.search-section {
+    text-align: center;
+    padding: 25px;
+}
+
+/* FAVOURITE CITIES */
+
+.favourite-section {
+    background: white;
+    padding: 25px;
+    border-radius: 24px;
+    margin: 22px 0;
+    box-shadow: 0 8px 30px #bca5d31c;
+}
+
+.favourite-section h2 {
+    color: #8766ad;
+    margin-bottom: 18px;
+}
+
+.favourite-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.favourite-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: #faf5ff;
+    padding: 7px;
+    border-radius: 13px;
+}
+
+.favourite-item button:first-child {
+    background: #f4e7f5;
+    color: #8966a8;
+}
+
+.favourite-item button:last-child {
+    background: #ffe8ef;
+    color: #c17fa7;
+    padding: 10px;
+}
+
+.search-section h2 {
+    color: #8766ad;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    max-width: 550px;
+    margin: auto;
+}
+
+.search-box input {
+    flex: 1;
+    min-width: 0;
+    padding: 14px;
+    border: 1px solid #e5d4f2;
+    border-radius: 14px;
+    outline: none;
+    background: white;
+    font-size: 14px;
+}
+
+button {
+    border: none;
+    padding: 13px 20px;
+    border-radius: 13px;
+    background: linear-gradient(100deg, #e6a9c9, #a88bd8);
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px #a88bd844;
+}
+
+.location-button {
+    margin-top: 12px;
+    background: #e7dcf8;
+    color: #8162a7;
+}
+
+#status {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #a18db2;
+}
+
+.weather-card,
+.outfit-card,
+.forecast-card {
+    background: white;
+    border-radius: 24px;
+    padding: 28px;
+    margin: 22px 0;
+    box-shadow: 0 8px 30px #bca5d31c;
+}
+
+.small-heading {
+    color: #bb82ae;
+    font-weight: 900;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+
+.weather-card h2 {
+    color: #8062aa;
+    margin-top: 12px;
+}
+
+#currentTime {
+    font-size: 13px;
+    color: #a69bb0;
+    margin-top: 5px;
+}
+
+.weather-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px 0;
+}
+
+#weatherIcon {
+    font-size: 90px;
+}
+
+#temperature {
+    color: #9272c2;
+    font-size: 55px;
+    font-weight: 900;
+}
+
+#condition {
+    color: #a18db2;
+    font-weight: 700;
+}
+
+.weather-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.weather-details div {
+    text-align: center;
+    padding: 17px 8px;
+    background: #faf5ff;
+    border-radius: 15px;
+}
+
+.weather-details span {
+    font-size: 25px;
+}
+
+.weather-details p {
+    font-size: 12px;
+    color: #a18db2;
+    margin: 7px 0;
+}
+
+.weather-details strong {
+    color: #8062aa;
+}
+
+/* STYLE BUDDY */
+
+.outfit-card {
+    background: linear-gradient(120deg, #fff0f6, #f0eaff);
+}
+
+.buddy {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 22px 0;
+}
+
+.girl {
+    background: white;
+    border-radius: 50%;
+    width: 105px;
+    height: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    flex-shrink: 0;
+}
+
+.buddy h2 {
+    color: #a66eaa;
+    font-size: 21px;
+}
+
+.buddy p {
+    color: #947e9f;
+    margin-top: 7px;
+    line-height: 1.5;
+}
+
+.outfit-content {
+    text-align: center;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.outfit-content h2 {
+    color: #8e6db7;
+}
+
+.outfit-icon {
+    font-size: 65px;
+    margin: 18px 0;
+}
+
+#outfitDescription {
+    color: #9e8ba9;
+    line-height: 1.6;
+}
+
+.outfit-tips {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.outfit-tips span {
+    background: #f9edf7;
+    color: #956e9f;
+    padding: 10px 15px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+/* FORECAST */
+
+.forecast-card h2 {
+    color: #8062aa;
+    margin-bottom: 20px;
+}
+
+.forecast-list {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.forecast-item {
+    text-align: center;
+    background: #faf5ff;
+    padding: 15px 5px;
+    border-radius: 15px;
+}
+
+.forecast-item p {
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.forecast-item span {
+    display: block;
+    font-size: 27px;
+    margin: 12px 0;
+}
+
+.forecast-item strong {
+    color: #8062aa;
+    font-size: 13px;
+}
+
+.forecast-item small {
+    display: block;
+    color: #a18db2;
+    margin-top: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #b184b6;
+    font-weight: 800;
+}
+
+@media (max-width: 650px) {
+    .weather-details {
+        grid-template-columns: 1fr;
+    }
+
+    .forecast-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .weather-main {
+        gap: 12px;
+    }
+
+    #temperature {
+        font-size: 42px;
+    }
+
+    #weatherIcon {
+        font-size: 65px;
+    }
+
+    .buddy {
+        align-items: flex-start;
+    }
+
+    .favourite-section {
+    padding: 20px;
+}
+
+.favourite-list {
+    justify-content: center;
+}
+
+.rain-alert {
+    font-size: 13px;
+}
+}
+
+/* RAIN ALERT */
+
+.rain-alert {
+    margin-top: 20px;
+    padding: 16px;
+    border-radius: 15px;
+    background: linear-gradient(100deg, #fff0f6, #f0eaff);
+    color: #8966a8;
+    font-weight: 800;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 14px;
+}

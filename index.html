@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WeatherBoo - Weather & Style Buddy</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>☁️ WeatherBoo</h1>
+        <p>Your Weather & Style Buddy 💗</p>
+    </header>
+
+    <main>
+
+        <section class="search-section">
+            <h2>Let's check the sky! 🌸</h2>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Enter your city name..."
+                >
+
+                <button onclick="searchCity()">Search 🔍</button>
+            </div>
+
+            <button class="location-button" onclick="getLocation()">
+                📍 Use My Current Location
+            </button>
+
+            <p id="status">Search a city or use your current location.</p>
+        </section>
+
+        <!-- FAVOURITE CITIES -->
+
+        <section class="favourite-section">
+            <h2>My Favourite Cities ⭐</h2>
+
+            <div id="favouriteList" class="favourite-list">
+                <p>No favourite cities yet. 💗</p>
+            </div>
+        </section>
+
+        <!-- CURRENT WEATHER -->
+
+        <section class="weather-card">
+
+            <p class="small-heading">CURRENT WEATHER</p>
+
+            <h2 id="cityName">Waiting for location...</h2>
+            <p id="currentTime">--</p>
+
+            <button onclick="addFavourite()" id="favouriteButton">
+                    ⭐ Add to Favourites
+            </button>
+
+            <div class="weather-main">
+                <span id="weatherIcon">🌤️</span>
+
+                <div>
+                    <h1 id="temperature">--°C</h1>
+                    <p id="condition">Weather condition</p>
+                </div>
+            </div>
+
+            <div class="weather-details">
+                <div>
+                    <span>🌡️</span>
+                    <p>Feels Like</p>
+                    <strong id="feelsLike">--°C</strong>
+                </div>
+
+                <div>
+                    <span>💧</span>
+                    <p>Humidity</p>
+                    <strong id="humidity">--%</strong>
+                </div>
+
+                <div>
+                    <span>💨</span>
+                    <p>Wind Speed</p>
+                    <strong id="wind">-- km/h</strong>
+                </div>
+            </div>
+            <div id="rainAlert" class="rain-alert">
+                ☁️ Rain updates will appear here.
+            </div>
+        </section>
+
+        <!-- DRESS SUGGESTION -->
+
+        <section class="outfit-card">
+
+            <p class="small-heading">YOUR STYLE BUDDY 🎀</p>
+
+            <div class="buddy">
+                <div class="girl">👩🏻‍🎤</div>
+
+                <div>
+                    <h2>Hey Bestie! 💕</h2>
+                    <p id="buddyDialogue">
+                        Let me check today's weather for you!
+                    </p>
+                </div>
+            </div>
+
+            <div class="outfit-content">
+                <h2 id="outfitTitle">Your Outfit Suggestion</h2>
+
+                <div id="outfitIcon" class="outfit-icon">👗</div>
+
+                <p id="outfitDescription">
+                    Your perfect outfit will appear here.
+                </p>
+
+                <div id="outfitTips" class="outfit-tips"></div>
+            </div>
+
+        </section>
+
+        <!-- 7 DAY FORECAST -->
+
+        <section class="forecast-card">
+
+            <h2>7-Day Weather Forecast 🌈</h2>
+
+            <div id="forecastList" class="forecast-list">
+                <p>Forecast will appear here.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        Made with 💗 by WeatherBoo
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
